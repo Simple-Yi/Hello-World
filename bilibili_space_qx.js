@@ -1,10 +1,3 @@
-/* 
-[rewrite_local]
-^https:\/\/app\.bilibili\.com\/x\/v2\/space\?access_key url script-response-body bilibili_space_qx.js
-[mitm]
-hostname = app.bilibili.com
-*/
-
 let url = $request.url
 let regex = /vmid=(\d*)/
 let vmid= regex.exec(url)
